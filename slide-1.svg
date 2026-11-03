@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1e2a38"/>
+      <stop offset="100%" stop-color="#b8903f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <circle cx="1160" cy="220" r="150" fill="rgba(255,255,255,0.22)"/>
+  <rect x="120" y="150" width="700" height="480" rx="28" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.4)"/>
+  <text x="180" y="320" font-size="96" font-family="Arial, sans-serif" fill="#fff">Centre</text>
+  <text x="180" y="430" font-size="96" font-family="Arial, sans-serif" fill="#f5d58b">Japonais</text>
+  <text x="180" y="520" font-size="72" font-family="Arial, sans-serif" fill="#fff">Kinshasa</text>
+</svg>

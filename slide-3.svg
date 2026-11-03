@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#1f2730"/>
+  <rect x="180" y="200" width="1240" height="540" rx="30" fill="#e5d7b1" opacity="0.88"/>
+  <circle cx="430" cy="520" r="170" fill="#9d7f38"/>
+  <path d="M790 300h250v150H790zm0 180h320v150H790z" fill="#1f2730"/>
+  <text x="220" y="130" font-size="72" font-family="Arial, sans-serif" fill="#f7f3ea">Formations</text>
+  <text x="220" y="820" font-size="72" font-family="Arial, sans-serif" fill="#1f2730">Japonais • Anglais • Informatique</text>
+</svg>

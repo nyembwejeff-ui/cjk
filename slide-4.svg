@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#2e1e1e"/>
+  <circle cx="1160" cy="290" r="200" fill="#b8903f" opacity="0.8"/>
+  <rect x="160" y="210" width="680" height="420" rx="30" fill="#f6f1e8" opacity="0.9"/>
+  <text x="220" y="400" font-size="92" font-family="Arial, sans-serif" fill="#1d1d1d">Sport</text>
+  <text x="220" y="500" font-size="62" font-family="Arial, sans-serif" fill="#6d582c">Judo &amp; loisirs</text>
+  <text x="220" y="780" font-size="72" font-family="Arial, sans-serif" fill="#f6f1e8">Vivez le centre</text>
+</svg>
