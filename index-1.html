@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centre Japonais de Kinshasa (CJK)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logoc.png" type="image/png">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="cjk.css">
+</head>
+<body class="page-home" data-page="home">
+
+  <header class="topbar">
+    <nav class="topbar__nav" data-i18n-aria-label="nav.main" aria-label="Menu principal">
+      <a href="actualites.html" data-i18n="nav.news" data-lang="fr">Actualités</a>
+      <a href="formations.html" data-i18n="nav.formations" data-lang="fr">Formations</a>
+      <a href="histoire.html" data-i18n="nav.history" data-lang="fr">Histoire du centre</a>
+      <a href="a-propos.html" data-i18n="nav.about" data-lang="fr">À propos</a>
+      <a href="activites.html" data-i18n="nav.activities" data-lang="fr">Activités</a>
+      <a href="contact.html" data-i18n="nav.contact" data-lang="fr">Contactez-nous</a>
+    </nav>
+    <div class="lang-switcher" data-lang="fr">
+      <button type="button" class="lang-switcher__trigger" aria-haspopup="dialog" aria-expanded="false">
+        <span class="lang-switcher__flag" aria-hidden="true">🌐</span>
+        <span class="lang-switcher__code" id="langTriggerCode">FR</span>
+        <span class="lang-switcher__caret" aria-hidden="true">▾</span>
+      </button>
+      <div class="lang-switcher__panel" id="langSwitchPanel" role="dialog" aria-modal="false" data-i18n-aria-label="lang.open" aria-label="Sélecteur de langue">
+        <label class="lang-switcher__search" for="langSearch">
+          <span aria-hidden="true">⌕</span>
+          <input id="langSearch" type="search" placeholder="Rechercher une langue" autocomplete="off">
+        </label>
+        <div class="lang-switcher__list" id="langSwitchList"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="accueil">
+      <div class="slider" id="slider" aria-hidden="true"></div>
+      <div class="slider__shade"></div>
+      <div class="intro__brand">
+        <div class="intro__logo"><img src="images/cjk icon.jfif" alt="Logo du Centre Japonais de Kinshasa"></div>
+        <div class="intro__wordmark" aria-label="Centre Japonais de Kinshasa">
+          <span class="intro__wordmark-line">CENTRE JAPONAIS</span>
+          <span class="intro__wordmark-line">DE KINSHASA</span>
+          <span class="intro__wordmark-jp">キンシャサ日本センター</span>
+        </div>
+      </div>
+      <div class="intro__actions">
+        <p class="intro__kicker">ようこそ</p>
+        <button type="button" class="btn btn--gold" id="discoverBtn" data-i18n="home.discover" data-lang="fr">Découvrir le centre</button>
+      </div>
+      <div class="slider__dots" id="sliderDots" role="group" data-i18n-aria-label="home.choose_photo" aria-label="Choisir une photo"></div>
+    </section>
+
+    <section class="discover" id="discover" hidden>
+      <div class="wrap" id="histoire">
+        <h2 data-i18n="home.history" data-lang="fr">Histoire du centre</h2>
+        <p data-translate="home.history.text1">Le Centre Japonais de Kinshasa a été créé pour renforcer les liens culturels, éducatifs et sociaux entre la République Démocratique du Congo et le Japon.</p>
+        <p data-translate="home.history.text2">Au fil des années, il est devenu un espace de rencontre, de formation, de culture et d’échange entre les communautés locales et internationales.</p>
+      </div>
+
+      <div class="wrap" id="formations">
+        <h2 data-translate="formations.title">Nos formations</h2>
+        <p class="muted" data-translate="formations.intro">Découvrez les parcours d’apprentissage proposés par le Centre Japonais de Kinshasa.</p>
+        <div class="grid" id="trainingGrid"></div>
+      </div>
+
+      <div class="wrap" id="activites">
+        <h2 data-translate="activities.title">Activités et rendez-vous</h2>
+        <p class="muted" data-translate="activities.intro">Retrouvez les activités sportives, culturelles et les rendez-vous qui font vivre le centre.</p>
+        <div class="grid" id="activityGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="contact__grid">
+      <div>
+        <h2 data-i18n="contact.title" data-lang="fr">Contact</h2>
+        <div id="contactDetails"></div>
+      </div>
+      <form id="contactForm" novalidate>
+        <h2 data-i18n="contact.form.title" data-lang="fr">Écrivez-nous</h2>
+        <label for="cNom" data-i18n="contact.form.name" data-lang="fr">Votre nom</label>
+        <input id="cNom" type="text" autocomplete="name" required>
+        <label for="cMsg" data-i18n="contact.form.message" data-lang="fr">Votre message</label>
+        <textarea id="cMsg" rows="4" required></textarea>
+        <p class="form__error" id="contactError" role="alert"></p>
+        <button type="submit" class="btn btn--gold" data-i18n="contact.form.submit" data-lang="fr">Envoyer par WhatsApp</button>
+      </form>
+      <div class="contact__map" id="contactMap"></div>
+    </div>
+    <p class="contact__copy">© Centre Japonais de Kinshasa · CJK</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="cjk.js"></script>
+</body>
+</html>
